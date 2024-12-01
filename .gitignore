@@ -1,0 +1,43 @@
+# Go binary files
+*.exe
+*.exe~
+*.out
+*.test
+
+# Dependency directories
+/vendor/
+
+# Go workspace file
+go.work
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Build output
+/bin/
+/obj/
+
+# Test coverage directory
+.coverage/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# dotenv files
+.env
+# .env.example
+
+# Log files
+*.log
+
+# MongoDB data folder (if using MongoDB locally for development)
+data/
+
+# Generated files
+*.tar.gz
+*.zip
+*.tar
