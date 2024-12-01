@@ -67,3 +67,97 @@ To run this project, you need the following tools installed on your machine:
    **Request:**
    ```http
    GET http://localhost:8080/users
+   ```
+   **Response:**
+   ```json
+   [
+    {
+        "id": "123",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "age": 30        
+    },
+    {
+        "id": "456",
+        "name": "Jane Smith",
+        "email": "janesmith@example.com",
+        "age": 25
+    }
+   ]
+   ```
+
+### 2. **GET /users/:id**
+
+   Retrieve a user by ID.
+   **Request:**
+
+   ```http
+   GET http://localhost:8080/users/123
+   ```
+   **Response:**
+   ```json
+   {
+       "id": "123",
+       "name": "John Doe",
+       "email": "johndoe@example.com",
+       "age": 30
+   }
+   ```
+   If the user is not found, the response will be:
+   ```json
+   {
+       "message": "User not found"
+   }
+   ```
+        
+
+
+### 3. **POST /users**
+   
+   Create a new user.
+
+   **Request:**
+   ```http
+   POST http://localhost:8080/users
+   ```
+   **Body:**
+   ```json
+   {
+   "name": "John Doe",
+   "email": "johndoe@example.com",
+   "age": 30
+   }
+   ```
+
+### 4. **PUT /users/:id**
+   
+   Update a user by ID.
+
+   **Request:**
+   ```http
+   PUT http://localhost:8080/users/123
+   ```
+   **
+   Body:**
+   ```json
+   {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "age": 30
+   }
+   ```
+
+### 5. **DELETE /users/:id**
+   Delete a user by ID.
+
+   **Request:**
+   ```http
+   DELETE http://localhost:8080/users/123
+   ```
+   **Response:**
+   ```json
+   {
+    "message": "User deleted successfully"
+   }
+   ```
+
