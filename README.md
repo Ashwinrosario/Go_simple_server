@@ -8,7 +8,6 @@ To run this project, you need the following tools installed on your machine:
 
 - Go (1.16 or later)
 - MongoDB
-- `godotenv` package for loading environment variables
 
 ## Setup and Installation
 
@@ -16,7 +15,7 @@ To run this project, you need the following tools installed on your machine:
 
     ```bash
     git clone https://github.com/ashwinrosario/Go_simple_server.git
-    cd simple-server
+    cd Go_simple-server
     ```
 
 2. **Install dependencies:**
@@ -137,8 +136,7 @@ To run this project, you need the following tools installed on your machine:
    ```http
    PUT http://localhost:8080/users/123
    ```
-   **
-   Body:**
+   **Body:**
    ```json
    {
     "name": "John Doe",
