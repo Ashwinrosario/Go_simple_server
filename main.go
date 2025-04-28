@@ -66,6 +66,6 @@ func main() {
 	http.HandleFunc("/users/", routes.SpecificUserHandler(collection))
 
 	// Start the server
-	fmt.Printf("Server is running on http://localhost%s\n", port)
-	log.Fatal(http.ListenAndServe(port, nil))
+	fmt.Printf("Server is running on http://localhost:%s\n", port)
+	log.Fatal(http.ListenAndServe(":" + port, nil))
 }

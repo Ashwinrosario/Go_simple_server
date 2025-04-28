@@ -1,0 +1,7 @@
+# Ignore everything you don't need inside the Docker image
+.git
+.gitignore
+Dockerfile
+*.md
+node_modules
+tmp
